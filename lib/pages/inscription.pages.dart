@@ -11,9 +11,9 @@ class InscriptionPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           'Inscription',
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          style: TextStyle(color: Colors.black87),
         ),
-        backgroundColor: Colors.teal[300],
+        backgroundColor: Colors.teal[200],
         elevation: 0,
       ),
       body: Column(
@@ -61,7 +61,7 @@ class InscriptionPage extends StatelessWidget {
           TextButton(
             child: const Text(
               "J'ai un Compte",
-              style: TextStyle(fontSize: 22, color: Colors.teal),
+              style: TextStyle(fontSize: 22, color: Colors.black87),
             ),
             onPressed: () {
               Navigator.pop(context);

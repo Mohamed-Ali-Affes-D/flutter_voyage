@@ -9,9 +9,11 @@ class AuthentificationPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Page Authentification',
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          style: TextStyle(
+            color: Colors.black87,
+          ),
         ),
         backgroundColor: Colors.teal[200],
       ),
@@ -47,23 +49,24 @@ class AuthentificationPage extends StatelessWidget {
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 minimumSize: const Size.fromHeight(50),
-                backgroundColor: Colors.teal[200],
+                backgroundColor: Colors.teal[300],
               ),
               onPressed: () {
                 _onAuthentifier(context);
                 // Navigator.pop(context);
                 // Navigator.pushNamed(context, '/home');
               },
-              child: Text(
+              child: const Text(
                 'Connection',
                 style: TextStyle(fontSize: 22, color: Colors.white),
               ),
             ),
           ),
           TextButton(
-            child: Text(
+            child: const Text(
               "Nouvel Utilisateur",
               style: TextStyle(
+                color: Colors.black87,
                 fontSize: 20,
               ),
             ),
